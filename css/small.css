@@ -1,0 +1,71 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+header {
+    background: linear-gradient(0deg, rgb(190, 195, 204), #1d2c49);
+    color: white;
+    padding: 1rem 2%;
+}
+
+header h1 {
+    margin: 2;
+    font-size: 2rem;
+    text-align: center;
+}
+nav {
+    background-color: rgb(190, 195, 204);
+    display: flex;
+    flex-wrap: wrap;
+}
+nav button {
+    color: white;
+    flex-basis: 48%;
+    margin: .5rem 1%;
+    padding: 1rem 0;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    background: linear-gradient(0deg, #6a6b8b, #33323f);
+}
+#viewer {
+    margin: 1.2rem 1.2rem;
+    border-radius: 11px;
+    border: 2px solid #aaa;
+}
+#viewer img {
+    width: 100%;
+    display: block;
+}
+#viewer h2 {
+    margin: 0;
+    padding: .5rem;
+    background: #33323f;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#viewer ul {
+    margin: 0;
+    padding: 2 2 2rem 2rem;
+    color: rgb(41, 41, 41);
+
+}
+#viewer p {
+    padding: .1rem 2%;
+}
+
+footer {
+background: linear-gradient(0deg, #6a6b8b, #33323f);
+color: white;
+padding: 1rem 2%;
+text-align: center;
+}
